@@ -1,0 +1,26 @@
+Status Code,Type,Description
+400,Incorrect Values,Invalid values were supplied for the API request
+400,No Symbol,No symbol provided
+400,Type Required,Batch request types parameter requires a valid value
+401,Authorization Restricted,Hashed token authorization is restricted
+401,Authorization Required,Hashed token authorization is required
+401,Restricted,The requested data is marked restricted and the account does not have access.
+401,No Key,An API key is required to access the requested endpoint.
+401,Secret Key Required,The secret key is required to access to requested endpoint.
+401,Denied Referer,The referer in the request header is not allowed due to API token domain restrictions.
+402,Over Limit,You have exceeded your allotted credit quota (and pay-as-you-go is not enabled on legacy plans).
+402,Free tier not allowed,The requested endpoint is not available to free accounts.
+402,Tier not allowed,The requested data is not available to your current tier.
+403,Authorization Invalid,Hashed token authorization is invalid.
+403,Disabled Key,The provided API token has been disabled
+403,Invalid Key,The provided API token is not valid.
+403,Test token in production,A test token was used for a production endpoint.
+403,Production token in sandbox,A production token was used for a sandbox endpoint.
+403,Circuit Breaker,Your pay-as-you-go circuit breaker has been engaged and further requests are not allowed.
+403,Inactive,Your account is currently inactive.
+404,Unknown Symbol,Unknown symbol provided
+404,Not Found,Resource not found
+413,Max Types,Maximum number of types values provided in a batch request.
+429,Too many requests,Too many requests hit the API too quickly. An exponential backoff of your requests is recommended.
+451,Enterprise Permission Required,The requested data requires additional permission to access.
+500,System Error,Something went wrong on an IEX Cloud server.
